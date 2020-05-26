@@ -26,7 +26,7 @@ export default class DemoTableHomePage extends CJTSCollectionHomeBasePage {
         {
           title: "Page1",
           imageSource: imageSource,
-          nextPageName: "page1"
+          nextPageName: "demo_page1"
         },
       ]
     }
