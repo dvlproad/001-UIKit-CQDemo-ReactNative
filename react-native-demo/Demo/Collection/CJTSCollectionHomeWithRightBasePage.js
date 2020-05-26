@@ -11,8 +11,8 @@
  */
 import React, {Component} from 'react';
 import CJTSCollectionHomeBasePage from './CJTSCollectionHomeBasePage';
-import CJTSNavigationFactory from '../Navigation/CJTSNavigationFactory';
-import CJTSRoute from '../Navigation/CJTSRoute';
+import CJTSNavigationFactory from '../../Navigation/CJTSNavigationFactory';
+import CJTSRoute from '../../Navigation/CJTSRoute';
 
 export default class CJTSCollectionHomeWithRightBasePage extends CJTSCollectionHomeBasePage {
     static navigationOptions = ({navigation}) => {

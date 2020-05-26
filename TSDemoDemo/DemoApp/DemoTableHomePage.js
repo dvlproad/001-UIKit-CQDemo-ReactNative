@@ -1,5 +1,6 @@
 import React  from 'react';
-import CJTSTableHomeBasePage from '../react-native-demo/Demo/Table/CJTSTableHomeBasePage';
+// import CJTSTableHomeBasePage from '../react-native-demo/Demo/Table/CJTSTableHomeBasePage';
+import {CJTSTableHomeBasePage} from '@dvlproad/react-native-demo';
 
 export default class DemoTableHomePage extends CJTSTableHomeBasePage {
   constructor(props) {

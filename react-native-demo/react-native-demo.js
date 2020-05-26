@@ -20,13 +20,13 @@ import { CJTSDefaultImages } from "./Default/CJTSDefault";
 
 // demo base Page的基类
 import CJTSScrollHomeBasePage from "./Demo/CJTSScrollHomeBasePage";
-import CJTSTableHomeBasePage from "./Demo/CJTSTableHomeBasePage";
-import CJTSCollectionHomeBasePage from "./Demo/CJTSCollectionHomeBasePage";
+import CJTSTableHomeBasePage from "./Demo/Table/CJTSTableHomeBasePage";
+import CJTSCollectionHomeBasePage from "./Demo/Collection/CJTSCollectionHomeBasePage";
 
 // 带右键的 demo base Page的基类
 import CJTSRightActionBasePage from "./Demo/CJTSRightActionBasePage";
-import CJTSTableHomeWithRightBasePage from "./Demo/CJTSTableHomeWithRightBasePage";
-import CJTSCollectionHomeWithRightBasePage from './Demo/CJTSCollectionHomeWithRightBasePage';
+import CJTSTableHomeWithRightBasePage from "./Demo/Table/CJTSTableHomeWithRightBasePage";
+import CJTSCollectionHomeWithRightBasePage from './Demo/Collection/CJTSCollectionHomeWithRightBasePage';
 
 
 // Navigation

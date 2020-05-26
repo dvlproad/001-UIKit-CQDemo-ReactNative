@@ -9,7 +9,8 @@
  * Copyright (c) dvlproad. All rights reserved.
  */
 import React from 'react';
-import CJTSCollectionHomeBasePage from '../react-native-demo/Demo/Collection/CJTSCollectionHomeBasePage';
+// import CJTSCollectionHomeBasePage from '../react-native-demo/Demo/Collection/CJTSCollectionHomeBasePage';
+import {CJTSCollectionHomeBasePage} from '@dvlproad/react-native-demo';
 
 export default class DemoTableHomePage extends CJTSCollectionHomeBasePage {
   constructor(props) {

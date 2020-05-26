@@ -4,7 +4,7 @@
 
 import {AppRegistry} from 'react-native';
 
-// import App from './App';                                    // 脚手架自身的Demo
+// import App from './App';                                // 脚手架自身的Demo
 // import App from './DemoApp/DemoNormalPage';             // 单独测试不支持跳转的普通页面
 // import App from './DemoApp/DemoTableHomePage';          // 单独测试不支持跳转的Table首页
 // import App from './DemoApp/DemoCollectionHomePage';     // 单独测试不支持跳转的Table首页

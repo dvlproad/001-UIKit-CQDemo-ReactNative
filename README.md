@@ -42,3 +42,35 @@ pod install
 
 ## 二、添加路由
 
+参考文档
+
+* 官方文档：[react-navigation Getting started](https://reactnavigation.org/docs/getting-started)
+
+* [React Navigation5.0系列一：StackNavigator的使用](https://segmentfault.com/a/1190000021753725)
+
+```
+①
+yarn add @react-navigation/native
+
+②
+yarn add react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
+
+③在iOS工程中，重新 pod install
+
+
+④接下来，因为从React Navigation4.x版本开始，堆栈导航库就已经被分离出来，作为单独的依赖文件，所以要想添加StackNavigator的依赖
+yarn add @react-navigation/stack
+```
+
+
+
+## 三、发布
+
+```
+npm config get registry
+
+npm login
+
+npm publish --access=public
+```
+

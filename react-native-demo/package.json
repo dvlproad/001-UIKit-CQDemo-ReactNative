@@ -1,6 +1,6 @@
 {
   "name": "@dvlproad/react-native-demo",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A UI library for react native.",
   "main": "react-native-demo.js",
   "scripts": {
@@ -21,7 +21,5 @@
   "author": "dvlproad",
   "license": "MIT",
   "homepage": "https://github.com/dvlproad/001-UIKit-CQDemo-ReactNative.git",
-  "dependencies": {
-    
-  }
+  "dependencies": {}
 }
