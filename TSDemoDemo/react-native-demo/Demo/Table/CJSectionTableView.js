@@ -1,9 +1,9 @@
 //CJSectionTableView.js
 import React, {Component} from 'react';
-import { Text, View, SectionList } from 'react-native';
 import PropTypes from "prop-types";
+import { Text, View, SectionList } from 'react-native';
 import CJTableViewCell from "./CJTableViewCell";
-import {CJTSTheme} from "../Theme/CJTSTheme";
+import {CJTSTheme} from "../../Theme/CJTSTheme";
 
 export default class CJSectionTableView extends Component {
     static propTypes = {
@@ -25,7 +25,20 @@ export default class CJSectionTableView extends Component {
     }
 
 
-    _renderItem = (info) => {
+    _sectionComp = (info) => {
+        let sectionModel = info.section;
+        let txt = sectionModel.theme;
+        return <Text
+            style={{
+                height: 50, lineHeight: 50,
+                textAlign: 'center', textAlignVertical: 'center',
+                backgroundColor: CJTSTheme.style.themeColor,
+                color: 'white',
+                fontSize: 30
+            }}>{txt}</Text>
+    }
+
+    _renderItem = (info: {item: Object, index: number}) => {
         let moduleModel = info.item;
 
         return (
@@ -38,18 +51,6 @@ export default class CJSectionTableView extends Component {
                 )}
             />
         )
-    }
-
-    _sectionComp = (info) => {
-        let txt = info.section.key;
-        return <Text
-            style={{
-                height: 50, lineHeight: 50,
-                textAlign: 'center', textAlignVertical: 'center',
-                backgroundColor: CJTSTheme.style.themeColor,
-                color: 'white',
-                fontSize: 30
-            }}>{txt}</Text>
     }
 
     render() {

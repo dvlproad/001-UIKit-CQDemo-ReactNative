@@ -10,10 +10,10 @@
  * Copyright (c) dvlproad. All rights reserved.
  */
 import React, {Component} from 'react';
-import {Alert, Dimensions, Platform} from 'react-native';
 import PropTypes from "prop-types";
+import {Alert, Dimensions, Platform} from 'react-native';
 import CJCollectionView from './CJCollectionView';
-import CJTSRoute from "../Navigation/CJTSRoute";
+import CJTSRoute from "../../Navigation/CJTSRoute";
 
 let screenHeight = Dimensions.get('window').height;
 let screenBottomHeight = Platform.OS === 'ios' ? screenHeight >= 812 ? 34 : 0 : 0;

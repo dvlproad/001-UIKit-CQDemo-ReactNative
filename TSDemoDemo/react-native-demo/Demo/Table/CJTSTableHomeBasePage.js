@@ -12,7 +12,7 @@
 import React, {Component} from 'react';
 import {View, Alert, Dimensions, Platform} from 'react-native';
 import CJSectionTableView from './CJSectionTableView';
-import CJTSRoute from "../Navigation/CJTSRoute";
+import CJTSRoute from "../../Navigation/CJTSRoute";
 
 let screenHeight = Dimensions.get('window').height;
 let screenBottomHeight = Platform.OS === 'ios' ? screenHeight >= 812 ? 34 : 0 : 0;
@@ -35,7 +35,7 @@ export default class CJTSTableChooseBasePage extends Component {
             Alert.alert("提示：请至少设置 moduleModel.clickButtonHandle 或 moduleModel.nextPageName");
         }
     }
-    
+
     /**
      * 子类请重写此类
      * @returns {null}
@@ -56,7 +56,7 @@ export default class CJTSTableChooseBasePage extends Component {
      */
     updateIndexPathWithDetailText(section, row, detailText) {
         let sectionDataModel = this.state.sectionDataModels[section];
-        let dataModel = sectionDataModel.data[row];
+        let dataModel = sectionDataModel.values[row];
         dataModel.detailText = detailText;
 
         this.setState({
@@ -65,7 +65,7 @@ export default class CJTSTableChooseBasePage extends Component {
 
         })
     }
-    
+
 
     render() {
         const screenWidth = Dimensions.get('window').width;
@@ -76,7 +76,9 @@ export default class CJTSTableChooseBasePage extends Component {
                 <CJSectionTableView
                     style={{marginBottom: screenBottomHeight}}
                     sectionDataModels={this.state.sectionDataModels}
-                    clickModuleModel={this._execModuleModel}
+                    clickModuleModel={(moduleModel) =>{
+                        this._execModuleModel(moduleModel);
+                    }}
                 />
 
                 {this.renderChooseComponents()}

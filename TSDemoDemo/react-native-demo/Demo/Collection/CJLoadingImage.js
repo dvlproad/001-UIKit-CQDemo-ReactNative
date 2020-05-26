@@ -403,11 +403,3 @@ export default class CJLoadingImage extends Component {
         );
     }
 }
-
-var styles = StyleSheet.create({
-    imageBorder: {
-        borderRadius: 4,
-        borderWidth: 1,
-        borderColor: "#E5E5E5",
-    }
-})

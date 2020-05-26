@@ -8,7 +8,7 @@ UIKit、ReactNative
 创建APP(iOS & Android)项目
 
 ```
-react-native init TSDemo_Demo
+react-native init TSDemoDemo
 ```
 
 ### 1、iOS工程
@@ -37,4 +37,8 @@ pod install
 来源：简书
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 ```
+
+
+
+## 二、添加路由
 
